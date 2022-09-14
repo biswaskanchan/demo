@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
-import { Col, Container, Row,NavDropdown,Nav  } from "react-bootstrap";
+import "../../asent/Main.css"
+import { Col, Container, Row, NavDropdown, Nav } from "react-bootstrap";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
@@ -12,53 +13,53 @@ import nebLogo from "../../images/faq.png"
 
 
 
-function FirstNevnew(){
+function FirstNevnew() {
 
 
-   
 
 
-        return <Fragment>
-            <Container className="p-0" fluid={true}>
-                <Row>
-                    <Col className="firstNewnev">
-                        <img className="firstNavPicture" src={nebLogo} alt="logo"/>
-                        <h4 className="firstNevHeading">HK MART</h4>
 
-                        <form  action="">
-                            <input className="searchExample"  type="text" placeholder="Search....."/>
-                            <button className="searchButton" ><SearchIcon/></button>
-                         </form>
+    return <Fragment>
+        <Container className="p-0" fluid={true}>
+            <Row>
+                <Col className="firstNewnev">
+                    <img className="firstNavPicture" src={nebLogo} alt="logo" />
+                    <h4 className="firstNevHeading">HK MART</h4>
 
-                        <div className="NevLeft">
+                    <form action="">
+                        <input className="searchExample" type="text" placeholder="Search....." />
+                        <button className="searchButton" ><SearchIcon /></button>
+                    </form>
 
-           
-                       
-                     <div  className="secondNevIcon dropdown" >  
-                     
+                    <div className="NevLeft">
+
+
+
+                        <div className="secondNevIcon dropdown" >
+
                             <GroupAddIcon className="firstIconcolor " />
-                                <div class="dropdown-content">
-                                   
-                                    <a href="#"><LoginIcon/> Sign In</a>
-                                    <a href="#"><AccountCircleIcon/> Sign Up</a>
-                                </div>
+                            <div class="dropdown-content">
+
+                                <a href="#"><LoginIcon /> Sign In</a>
+                                <a href="#"><AccountCircleIcon /> Sign Up</a>
                             </div>
-
-
-                            <div className="secondNevIcon">
-                                    <FavoriteIcon className="firstIconcolor"/>
-                                    <span className="secondNevCart"> 9</span>
-                             </div>
-
-                            <div className="secondNevIcon">
-                                    <AddShoppingCartIcon className="firstIconcolor"/>
-                                    <span className="secondNevCart">4</span>
-                            </div> 
-
                         </div>
-            
-                    </Col>
-                </Row>
-            </Container>
-        </Fragment>
-}export default FirstNevnew
+
+
+                        <div className="secondNevIcon">
+                            <FavoriteIcon className="firstIconcolor" />
+                            <span className="secondNevCart"> 9</span>
+                        </div>
+
+                        <div className="secondNevIcon">
+                            <AddShoppingCartIcon className="firstIconcolor" />
+                            <span className="secondNevCart">4</span>
+                        </div>
+
+                    </div>
+
+                </Col>
+            </Row>
+        </Container>
+    </Fragment>
+} export default FirstNevnew

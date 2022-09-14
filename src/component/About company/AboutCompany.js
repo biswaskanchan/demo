@@ -18,10 +18,10 @@ import GoogleIcon from '@mui/icons-material/Google';
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
 
-function AboutCompany(){
+function AboutCompany() {
     return <Fragment>
         <Container fluid={true} className="p-0 mt-5 aboutCompanyBox" >
-           
+
             <Row className="bg-color">
                 <Col>
                     <div className="lefheading-top">
@@ -39,57 +39,57 @@ function AboutCompany(){
                 </Col>
 
                 <Col>
-                        <div className="from-section">
-                        <form  action="">
-                            <input className="input-section"  type="text" placeholder="Enter your email adress...."/>
+                    <div className="from-section">
+                        <form action="">
+                            <input className="input-section" type="text" placeholder="Enter your email adress...." />
                             <Button className="subscribe-section" >Subscribe</Button>
-                         </form>
-                        </div>
+                        </form>
+                    </div>
                 </Col>
             </Row>
 
-              
+
 
             <Row className="footerRowcolor">
                 <Col lg={3} md={4} sm={12}>
-                    <img className="footerMinlogo" src={mainlogo}/>
-                    <h4 className="footerHeadingHorijontal">Address <hr className="footerHorijental"/> </h4> 
-                    <p className="footerPragraph"><LocationOnIcon className="footerLocationicon"/>#House,6-b Road-5 Dhanmondi Dhaka-1216</p>
-                    <p className="footertext email-section"><EmailIcon/> kanchanbiswas379754@gmail.com</p>
-                
+                    <img className="footerMinlogo" src={mainlogo} />
+                    <h4 className="footerHeadingHorijontal">Address <hr className="footerHorijental" /> </h4>
+                    <p className="footerPragraph"><LocationOnIcon className="footerLocationicon" />#House,6-b Road-5 Dhanmondi Dhaka-1216</p>
+                    <p className="footertext email-section"><EmailIcon /> kanchanbiswas379754@gmail.com</p>
+
                 </Col>
 
                 <Col lg={3} md={4} sm={12}>
-                <h3 className="footerHeading">SPECIAL</h3>
-                <h4 className="footertext">FLASH DEAL</h4>
-                <h4 className="footertext">Featured Products</h4>
-                <h4 className="footertext">Latest Products</h4>
-                <h4 className="footertext">Best-Selling Products</h4>
-                <h4 className="footertext">Top-Rated Products</h4>
+                    <h3 className="footerHeading">SPECIAL</h3>
+                    <h4 className="footertext">FLASH DEAL</h4>
+                    <h4 className="footertext">Featured Products</h4>
+                    <h4 className="footertext">Latest Products</h4>
+                    <h4 className="footertext">Best-Selling Products</h4>
+                    <h4 className="footertext">Top-Rated Products</h4>
 
-                <h3 className="footerHeadingfirst">Start a conversation</h3>
-                <p className="footertext"><SettingsPhoneIcon/> 0000000 </p>
-                
+                    <h3 className="footerHeadingfirst">Start a conversation</h3>
+                    <p className="footertext"><SettingsPhoneIcon /> 0000000 </p>
+
                 </Col>
 
                 <Col lg={3} md={4} sm={12}>
-                <h3 className="footerHeading">ACCOUNT & SHIPPING INFO</h3>
-                <h4 className="footertext">Profile Info</h4>
-                <h4 className="footertext">Wish List</h4>
-                <h4 className="footertext">Track order</h4>
-                <h4 className="footertext">Address</h4>
+                    <h3 className="footerHeading">ACCOUNT & SHIPPING INFO</h3>
+                    <h4 className="footertext">Profile Info</h4>
+                    <h4 className="footertext">Wish List</h4>
+                    <h4 className="footertext">Track order</h4>
+                    <h4 className="footertext">Address</h4>
 
-                <hr className="footerHorijentalmiddle"></hr>
-                <p className="footertext"><SupportAgentIcon/> Support Ticket</p>
-               
-                
+                    <hr className="footerHorijentalmiddle"></hr>
+                    <p className="footertext"><SupportAgentIcon /> Support Ticket</p>
+
+
 
                 </Col>
 
                 <Col lg={3} md={4} sm={12}>
                     <h3 className="footerHeading">Features</h3>
-                   {/*<img className="footerDownloadpic footerMarginPic" src={appstore}/>
-                    <img className="footerDownloadpic" src={playstore}/> */} 
+                    {/*<img className="footerDownloadpic footerMarginPic" src={appstore}/>
+                    <img className="footerDownloadpic" src={playstore}/> */}
                     <h4 className="footertext">Super Fast Ecommerce Store</h4>
                     <h4 className="footertext">Free Shiping Returns</h4>
                     <h4 className="footertext">Money Back Guarantees</h4>
@@ -105,19 +105,19 @@ function AboutCompany(){
                 </Col>
 
                 <Col lg={4} md={6} sm={12}>
-                <p ><FacebookIcon className="footerSocalIcon facebook-icon"/> 
-                    <InstagramIcon className="footerSocalIcon instagram-icon"/>
-                    <TwitterIcon className="footerSocalIcon twiter-icon"/> 
-                    <LinkedInIcon className="footerSocalIcon linkdin-icon"/>
-                    <GoogleIcon className="footerSocalIcon google-icon"/>
-                    <PinterestIcon className="footerSocalIcon pintarest-icon"/> </p>
+                    <p ><FacebookIcon className="footerSocalIcon facebook-icon" />
+                        <InstagramIcon className="footerSocalIcon instagram-icon" />
+                        <TwitterIcon className="footerSocalIcon twiter-icon" />
+                        <LinkedInIcon className="footerSocalIcon linkdin-icon" />
+                        <GoogleIcon className="footerSocalIcon google-icon" />
+                        <PinterestIcon className="footerSocalIcon pintarest-icon" /> </p>
                 </Col>
 
                 <Col lg={4} md={6} sm={12}>
-                <h3 className="footerPrivecy">Tram & Condtion</h3>
-                <h3 className="footerPolicy">Privacy Policy</h3>
+                    <h3 className="footerPrivecy">Tram & Condtion</h3>
+                    <h3 className="footerPolicy">Privacy Policy</h3>
                 </Col>
             </Row>
         </Container>
     </Fragment>
-}export default AboutCompany;
+} export default AboutCompany;

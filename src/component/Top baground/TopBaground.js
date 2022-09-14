@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 
-function TopBaground(){
+function TopBaground() {
     return <Fragment>
-            <div className="bannerTop">
+        <div className="bannerTop">
             <p className="bannerPragraph">Welcome to Ecommerce</p>
             <h1 className="bannerHead">FIND AMAZING PRODUCTS BELOW</h1>
 
-            </div>
+        </div>
     </Fragment>
-}export default TopBaground
+} export default TopBaground

@@ -67,22 +67,22 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function PrimarySearchAppBar() {
 
-/*
-        const [pic,setpic]=useState({
-           navColor:"firstNav"
-})
-
-onScroll=()=>{
-  if(window.scroll>100){
-    pic.navColor
-  }else if(window.scroll<100){
-    pic.navColor
-  }
-}
-
-componenntDidMount(window.addEventListener( onScroll()))
+  /*
+          const [pic,setpic]=useState({
+             navColor:"firstNav"
+  })
   
-*/
+  onScroll=()=>{
+    if(window.scroll>100){
+      pic.navColor
+    }else if(window.scroll<100){
+      pic.navColor
+    }
+  }
+  
+  componenntDidMount(window.addEventListener( onScroll()))
+    
+  */
 
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -147,7 +147,7 @@ componenntDidMount(window.addEventListener( onScroll()))
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      
+
       <MenuItem>
         <IconButton
           size="large"
@@ -176,19 +176,19 @@ componenntDidMount(window.addEventListener( onScroll()))
   );
 
   return (
-    <Box  sx={{ flexGrow: 1 }}>
-      <AppBar  position="static">
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
         <Toolbar  >
-          
-          <Typography 
+
+          <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            
-           <RemoveShoppingCartIcon className="firstNavicon"/> Hk Mart 
-        
+
+            <RemoveShoppingCartIcon className="firstNavicon" /> Hk Mart
+
           </Typography>
           <Search >
             <SearchIconWrapper>
@@ -201,7 +201,7 @@ componenntDidMount(window.addEventListener( onScroll()))
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            
+
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -218,7 +218,7 @@ componenntDidMount(window.addEventListener( onScroll()))
               color="inherit"
             >
               <Badge badgeContent={17} color="error">
-            <AddShoppingCartIcon />
+                <AddShoppingCartIcon />
               </Badge>
             </IconButton>
 
@@ -233,7 +233,7 @@ componenntDidMount(window.addEventListener( onScroll()))
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-             <AccountCircle />
+              <AccountCircle />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
