@@ -23,12 +23,17 @@ function FirstNevnew() {
         <Container className="p-0" fluid={true}>
             <Row>
                 <Col className="firstNewnev">
-                    <img className="firstNavPicture" src={nebLogo} alt="logo" />
-                    <h4 className="firstNevHeading">HK MART</h4>
+                    <div>
+                        <img className="firstNavPicture" src={nebLogo} alt="logo" />
+                        <h4 className="firstNevHeading">HK MART</h4>
+                    </div>
 
                     <form action="">
+                        <div className="search-maindiv">
                         <input className="searchExample" type="text" placeholder="Search....." />
-                        <button className="searchButton" ><SearchIcon /></button>
+                        <div className="search-lastdiv"><button className="searchButton" ><SearchIcon /></button></div>
+                        </div>
+                       
                     </form>
 
                     <div className="NevLeft">

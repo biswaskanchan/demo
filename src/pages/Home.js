@@ -26,14 +26,15 @@ import Secondbrand from '../component/second brands/Secondbrand';
 
 
 //import Signup from '../component/sign up/Signup';
-//import Signin from '../component/sign in/Signin';
-//import Sellerapplicate from '../component/seller application/Sellerapplicate';
-//import Sellerlogin from '../component/seller login/Sellerlogin';
+import Signin from '../component/sign in/Signin';
+import Sellerapplicate from '../component/seller application/Sellerapplicate';
+import Sellerlogin from '../component/seller login/Sellerlogin';
+//import Customnev from '../component/nev new custom/Customnev';
 function Home (){
     return <Fragment>
       <FirstNevnew/>
-      
       <SecondNav/>
+
       <TopBaground/>
       <Secondbrand/>
       <Discountproduct/>
@@ -51,7 +52,9 @@ function Home (){
       <WomenFashion/>
       <MenFashion/>
 
-      
+      <Signin/>
+      <Sellerapplicate/>
+      <Sellerlogin/>
 
       <TramsCondition/>
       <AboutCompany/>

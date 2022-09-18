@@ -33,7 +33,7 @@ function Signup() {
             <Row>
                 <Col >
                     <Row className="from-sectionsignup">
-                        <div><h2 className="from-heading">Register control your order</h2></div>
+                        <div><h2 className="from-heading2">Register control your order</h2></div>
                         <Col lg={6} md={12} sm={12}>
 
                             <form className="main-marginbottom">
@@ -81,7 +81,7 @@ function Signup() {
                                     <span onClick={Seeycon} className="eye-sec"><VisibilityOutlinedIcon className="eyes" /></span>
                                 </div>
 
-                                <div className="button-margin"><Button className="signup-button">Sign up</Button></div>
+                                <div className="button-margin"><Button className="signup-button wd-he">Sign up</Button></div>
 
 
                             </form>

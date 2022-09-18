@@ -26,7 +26,7 @@ function SecondNav() {
     <div className="secondNavcolor">
 
       <Navbar bg="light" expand="lg">
-        <Container className="p-0 m-0">
+        <Container fluid={true} className="p-0 m-0">
           <div>
             <Button className="buttonNav"
 
@@ -81,8 +81,10 @@ function SecondNav() {
               </ul>
             </Fade>
           </div>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="" id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto"></Nav>
+          
             <Nav className="secondnev-side ">
               <Nav.Link className="second-nevhover" href="#home">Home</Nav.Link>
               <Nav.Link className="second-nevhover" href="#All Brands">All Brands</Nav.Link>

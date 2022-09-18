@@ -7,8 +7,10 @@ import SettingsPhoneIcon from '@mui/icons-material/SettingsPhone';
 //import aboutcompany from "../../images/about company.png"
 //import contuctus from "../../images/contact us.png"
 //import question from "../../images/faq.png"
-import appstore from "../../images/apple_app.png"
-import playstore from "../../images/google_app.png"
+//import appstore from "../../images/apple_app.png"
+//import playstore from "../../images/google_app.png"
+
+import payments from "../../images/payment (1).png"
 import mainlogo from "../../images/company.png"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -114,8 +116,14 @@ function AboutCompany() {
                 </Col>
 
                 <Col lg={4} md={6} sm={12}>
-                    <h3 className="footerPrivecy">Tram & Condtion</h3>
-                    <h3 className="footerPolicy">Privacy Policy</h3>
+                    <div>
+                        <h3 className="footerPrivecy">Tram & Condtion</h3>
+                        <h3 className="footerPolicy">Privacy Policy</h3>
+                        <div>
+                            <img className="visacard-master" src={payments}/>
+                        </div>
+                    </div>
+                    
                 </Col>
             </Row>
         </Container>

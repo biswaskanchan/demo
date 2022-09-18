@@ -20,7 +20,7 @@ function Signin(){
     return <Fragment>
                 <Container className="p-0 mt-5">
                     <Row className="from-sectionsignup">
-                    <div><h2 className="from-heading"> Sign in </h2></div>
+                    <div><h2 className="from-heading2"> Sign in </h2></div>
                         <Col>
                         
                             <from >
@@ -50,7 +50,7 @@ function Signin(){
                                 <Col lg={6} md={12} sm={12}>
                                 <div><h2 className="fild-name"> No account Sign up now </h2></div>
 
-                                <div className="google-button signin-tp"><Button className="gle-buttn" variant="outline-info"><GoogleIcon className="glg-coler" /> Sign in with google</Button>{' '}</div>
+                                <div className="google-button1 signin-tp"><Button className="gle-buttn" variant="outline-info"><GoogleIcon className="glg-coler" /> Sign in with google</Button>{' '}</div>
 
                                 </Col>
 
