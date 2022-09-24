@@ -9,7 +9,7 @@ import Laptop from "../../images/top5.jpg"
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
 
-
+import Countdown from 'react-countdown';
 
 
 function Discountproduct() {
@@ -24,16 +24,25 @@ function Discountproduct() {
     slidesToScroll: .5,
 
   };
+  
+  const fullDays= 24;
+  const hrs= 3600000*fullDays;
+  const days=7
+  const fullCount= days*hrs; 
 
-  return <Fragment>
+ return <Fragment>
 
 
     <Container className="mt-4">
 
       <Row className="discountMaincontainer">
         <Col className="discountLeftsection" lg={4} md={8} sm={12}>
-          <h2>FLASH DEAL</h2>
-          <h3>time section</h3>
+          <h2 className="flassh-dells">FLASH DEAL</h2>
+          
+          <div className="flash-section">     
+                        <Countdown className="count-Down"
+                  date={Date.now() + fullCount}/>
+          </div>
 
 
         </Col>
@@ -51,34 +60,27 @@ function Discountproduct() {
                     <Row>
                       <Col className="" lg={4} md={4} sm={12} >
                         <div>
-                          <div className="sliderCardsDiscount sliderCardsDiscountlink">
-                            10% Off
-                          </div>
-
-                          <a className="sliderCardsDiscountlink" href="">
-                            <img className="sliderCardsImage" src={Shoes} alt="pic" />
-                          </a>
+                          <img className="sliderCardsImage" src={Shoes} alt="pic" />
                         </div>
                       </Col>
 
                       <Col className="sliderCardsImage" lg={8} md={8} sm={12}>
                         <Col>
-                          <a className="sliderHeadingProductlink" href="">
-                            <h3 className="sliderHeadingProduct">Hot Selling Laptop, Apple Laptop</h3>
-
-                          </a>
-
+                          <h3 className="sliderHeadingProduct">Hot Selling Laptop, Apple Laptop</h3>
                           <Stack spacing={1}>
                             <Rating name="size-small" defaultValue={3} size="small" />
                           </Stack>
-                          <del className="sliderDeletprice"> $500.0 </del>
-                          <p className="sliderPrice"> $450.0 </p>
+                          <div>
+                            <div><del className="sliderDeletprice"> $500.0 </del></div>
+                            <div><p className="sliderPrice"> $450.0 </p></div>
+                            {/*<div className="sliderCardsDiscount sliderCardsDiscountlink">
+                                <p>10% Off</p>
+                              </div> */}
 
+                          </div>
                         </Col>
                       </Col>
                     </Row>
-
-
                   </Col>
 
 
@@ -89,27 +91,27 @@ function Discountproduct() {
 
                     <Row>
                       <Col className="" lg={4} md={12} sm={12} >
-                        <div className="sliderCardsDiscount">
-                          <a className="sliderCardsDiscountlink" href="#"><p>10% Off</p></a>
-                        </div>
 
-                        <a className="sliderCardsDiscountlink" href="">
-                          <img className="sliderCardsImage" src={Laptop} alt="pic" />
-                        </a>
+                        <img className="sliderCardsImage" src={Laptop} alt="pic" />
+
 
                       </Col>
 
                       <Col className="sliderCardsImage" lg={8} md={12} sm={12}>
                         <Col>
-                          <a className="sliderHeadingProductlink" href="">
-                            <h3 className="sliderHeadingProduct">Hot Selling Laptop, Apple Laptop</h3>
-                          </a>
+                          <h3 className="sliderHeadingProduct">Hot Selling Laptop, Apple Laptop</h3>
 
                           <Stack spacing={1}>
                             <Rating name="size-small" defaultValue={3} size="small" />
                           </Stack>
-                          <del className="sliderDeletprice"> $500.0 </del>
-                          <p className="sliderPrice"> $450.0 </p>
+
+                          <div>
+                            <div><del className="sliderDeletprice"> $500.0 </del></div>
+                            <div><p className="sliderPrice"> $450.0 </p></div>
+                            {/*<div >
+                              <p className="sliderCardsDiscount sliderCardsDiscountlink">10% Off</p>
+                              </div> */}
+                          </div>
 
                         </Col>
                       </Col>
@@ -132,13 +134,7 @@ function Discountproduct() {
 
                     <Row>
                       <Col className="" lg={4} md={12} sm={12} >
-                        <div className="sliderCardsDiscount">
-                          <a className="sliderCardsDiscountlink" href="#"><p>10% Off</p></a>
-                        </div>
-
-                        <a className="sliderCardsDiscountlink" href="">
-                          <img className="sliderCardsImage" src={Shoes} alt="pic" />
-                        </a>
+                        <img className="sliderCardsImage" src={Shoes} alt="pic" />
 
                       </Col>
 
@@ -169,13 +165,7 @@ function Discountproduct() {
 
                     <Row>
                       <Col className="" lg={4} md={4} sm={12} >
-                        <div className="sliderCardsDiscount">
-                          <a className="sliderCardsDiscountlink" href="#"><p>10% Off</p></a>
-                        </div>
-
-                        <a className="sliderCardsDiscountlink" href="">
-                          <img className="sliderCardsImage" src={Laptop} alt="pic" />
-                        </a>
+                        <img className="sliderCardsImage" src={Laptop} alt="pic" />
 
                       </Col>
 
@@ -215,7 +205,4 @@ function Discountproduct() {
 
     </Container>
   </Fragment>
-
-
-
 } export default Discountproduct

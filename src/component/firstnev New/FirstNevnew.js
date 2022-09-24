@@ -25,16 +25,18 @@ function FirstNevnew() {
                 <Col className="firstNewnev">
                     <div>
                         <img className="firstNavPicture" src={nebLogo} alt="logo" />
-                        <h4 className="firstNevHeading">HK MART</h4>
+                        <h4 className="firstNevHeading">HK MART </h4>
                     </div>
 
-                    <form action="">
-                        <div className="search-maindiv">
+                    <div className="search-maindiv">
+                        <form action="">
+                        <div >
                         <input className="searchExample" type="text" placeholder="Search....." />
                         <div className="search-lastdiv"><button className="searchButton" ><SearchIcon /></button></div>
                         </div>
                        
                     </form>
+                    </div>
 
                     <div className="NevLeft">
 
